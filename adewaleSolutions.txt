@@ -1,0 +1,60 @@
+//Number 1: Make th Object
+const menu = {
+  margarita: {
+    toppings: [
+      'mozzerella',
+      'sauce',
+      'basil'
+    ],
+    price: 4.75
+  },
+  pepperoniMushroom: {
+    toppings: [
+      'pepperoni',
+      'mushroom',
+      'cheese',
+      'sauce'
+    ],
+    price: 4.75
+  },
+  spinach: {
+    toppings: [
+      'spinach',
+      'cheese',
+      'garlic'
+    ],
+    price: 4.75
+  },
+  buffaloChicken: {
+    toppings: [
+      'buffalo sauce',
+      'chicken',
+      'cheese'
+    ],
+    price: 4.75
+  },
+  plain: {
+    toppings: [
+      'cheese',
+      'sauce',
+      'love'
+    ],
+    price: 4.75
+  }
+}
+
+//Number 2: Print the names of all Pizzas 
+for(var pizza in menu){
+  console.log(pizza)
+} 
+
+//Number 3: Check for the existence of a special Pizza
+
+var hasBanana = 'banana' in menu
+//var hasBanana = menu.hasOwnProperty("banana");
+
+if(hasBanana === true) {
+  console.log('Coming right up!')
+} else {
+  console.log('We aint got no damn banana pizza')
+}

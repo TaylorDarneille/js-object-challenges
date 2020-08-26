@@ -25,3 +25,4 @@ const menu = {
   
   //check to see if the parlor offers a `banana` pizza. 
   console.log.hasOwnProperty("banana")
+  console.log("test")

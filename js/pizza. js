@@ -1,0 +1,32 @@
+// Question 1
+const menu = {
+    sausage: {
+      toppings: ['sausage', 'cheese', 'tomato sauce'],
+      price: '$8'
+      },
+    cheese: {
+      toppings: ['cheese', 'tomato sause', 'extra cheese'],
+      price: '$6'
+    },
+    meatlover: {
+      toppings: ['sausage', 'pepperoni', 'italian sausage'],
+      price: '$13'
+    },
+      supreme: {
+      toppings: ['tomatoes', 'green peppers', 'onion'],
+      price: '$13'
+      },
+      cheeseburger: { 
+        toppings: ['cheese', 'beef', 'onions']
+      }
+}
+      console.log('Question 1: \n', menu);
+
+//Question 2
+     
+      console.log('Question 2: \n', Object.keys(menu));
+
+//Question 3
+      
+      console.log('Question 3: \n', pizza = 'banana' in menu);
+

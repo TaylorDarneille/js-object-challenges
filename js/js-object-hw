@@ -1,0 +1,31 @@
+const menu = {
+  pepperoni: {
+    toppings: ['garlic', 'tomatoes', 'pepperoni'],
+    price: 4
+  }, 
+  cheese: {
+    toppings: ['Black Olives', 'Broccoli', 'Spinach'],
+    price: 6
+  },
+   hawaiian: {
+    toppings: ['Ham', 'Steak', 'Jalapenos'],
+    price: 8
+  },
+
+  margarita: {
+    toppings: ['Chicken', 'Ground Beef', 'Bacon Bits'],
+    price: 9
+  },
+  languica: {
+    toppings: ['Chick peas', 'Beef', 'Bacon'],
+    price: 10  
+  }
+}
+console.log(Object.keys(menu))
+
+if ('banana' in menu) {
+  console.log('There it is!')
+} else {
+  console.log('It aint there')
+}
+ 

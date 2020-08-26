@@ -8,7 +8,7 @@ let menu = {
       price: '$15'
       },
     hawaiian: {
-      toppings: ['tomatoes', 'olives', 'onion'],
+      toppings: ['pineapple', 'ham', 'peppers'],
       price: '$15'
       },
     meatlovers: {

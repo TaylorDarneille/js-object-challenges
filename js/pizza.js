@@ -1,43 +1,61 @@
-//1. 
+// hawaiian: [
+  //   'pineapple',
+  //   'chicken',
+  //   'onion'
+  // ],
+  // pep: [
+  //   'pepperoni',
+  //   'tomato',
+  //   'cheese',
+  // ]
+  // bbq: [
+  //   'chicken',
+  //   'bbq sauce',
+  //   'jalapenos'
+  // ]
+
+
+// console.log(menu)
+
+// menu.hawaiian = ['pineapple', 'chicken', 'onion', 5]
+// menu.pepperoni = ['pepperoni', 'tomato', 'cheese', 6]
+// menu.bbq = ['chicken', 'bbq sauce', 'jalapenos', 7]
+// menu.delux = ['chicken', 'pepperoni', 'sausage', 8]
+// menu.threeCheese = ['parm', 'cheddar', 'motza', 9]
+
+console.log(menu)
+
+// the above is my answer for question 1 before a screen share with Bruno and class in after hours
+
 var menu = {
-    plain: {
-      toppings: ['mozzarella', 'tomatosauce','herbs'],
-      price: '8.00' 
-    },
-    
-    usual: {
-      toppings: ['mozzarella','pepperoni','tomatosauce'],
-      price: '10.00'
-    },
-    
-    supreme: {
-      toppings: ['vegetables','pepperoni','sausage','tomatosauce'],
-      price: '12.00'
-    },
-    
-    veggie: {
-      toppings: ['vegetables','tomatosauce','mozzarella'],
-      price: '9.00'
-    },
-    
-    roadkill: {
-      toppings: ['surprise','stuff','things'],
-      price: '25.00'
-    }
+  hawaiian: {
+    toppings: ['pineapple', 'chicken', 'onion'],
+    price: 5
+  },
+  pepp: {
+    toppings: ['pepperoni', 'tomato', 'cheese'],
+    price: 6
+  },
+  bbq: {
+    toppings: ['chicken', 'bbq sauce', 'jalapenos'],
+    price: 7
+  },
+  delux: {
+    toppings: ['chicken', 'pepperoni', 'sausage'],
+    price: 8
+  },
+  threeCheese: {
+    toppings: ['parm', 'cheddar', 'motza'],
+    price: 9
+  }
 }
 
 console.log(menu)
 
-//2.
-  
-  for(var pizzatype in menu){
-      console.log(pizzatype)
-    }
+console.log(Object.keys(menu))
 
-//3.
-
-if (menu.banana){
-  console.log('Gurl, you nasty')
+if ('banana' in menu) {
+  console.log('There it is!')
 } else {
-  console.log('I don\'t know why you\'d want that anyway')
+  console.log('It aint there')
 }
